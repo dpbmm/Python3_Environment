@@ -81,7 +81,7 @@ In order to install Ubuntu packages, we normally use
     sudo apt-get update
     sudo apt-get install <names>
 
-`apt-get` doesn't have a `search` command; instead, we use
+But `apt-get` doesn't have a `search` command; instead, we use
 
     sudo apt-cache search <names>
 
