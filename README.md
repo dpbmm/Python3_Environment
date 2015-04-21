@@ -10,9 +10,9 @@ The working Vagrantfile (the configuration file for a Vagrant environment) is in
 
  1. Clone this entire repository into the directory where you want it to live. I suggest making a special directory `develop` or `vagrant_environments` or something clear of that sort. The simplest way to do it will look like this:
 
-    cd ~/develop
-    git clone https://github.com/dpbmm/Python3_Environment.git
-    cd Python3_Environment
+        cd ~/develop
+        git clone https://github.com/dpbmm/Python3_Environment.git
+        cd Python3_Environment
 
  1. Install Vagrant on your host operating system, following instructions beginning [here](http://docs.vagrantup.com/v2/installation/). What follows assumes your "host" operating system is Mac OS 10.9.5; your "guest" operating system is the one being provisioned by Vagrant. I am using VirtualBox as my virtual machine, but other choices are possible.
  1. Initialize, run, and log in to the Vagrant environment as described in the sections below. Note:
