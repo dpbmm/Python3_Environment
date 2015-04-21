@@ -25,11 +25,11 @@ The working Vagrantfile (the configuration file for a Vagrant environment) is in
 
 ### Launching
 
-After cloning, enter the top-level directory, and do set-up with these two steps:
+After cloning, enter the top-level directory, and do set-up with this single step:
 
     vagrant up
 
-The first time you do this, a virtual machine will be provisioned and launched; after the first time, the existing virtual machine will simply be launched without re-provisioning. On a recent MacBook Pro running OS 10.9.5, provisioning takes about two or three minutes; launching without re-provisioning takes about twenty seconds.
+The first time you do this, a virtual machine will be provisioned and launched; later, unless you destroy the environment, the existing virtual machine will simply be launched without re-provisioning. On a recent MacBook Pro running OS 10.9.5, provisioning takes about two or three minutes; launching without re-provisioning takes about twenty seconds.
 
 ### Logging in to a running virtual machine
 
