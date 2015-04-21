@@ -79,11 +79,11 @@ In order to use `pip` to install Python packages you will need to be working wit
 In order to install Ubuntu packages, we normally use
 
     sudo apt-get update
-    sudo apt-get install <names>;
+    sudo apt-get install <names>
 
 `apt-get` doesn't have a `search` command; instead, we use
 
-    sudo apt-cache search <names>;
+    sudo apt-cache search <names>
 
 Do remember that packages installed on your guest OS will not be available to you on the host OS, and vice versa.
 
