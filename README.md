@@ -4,6 +4,8 @@ This README is dated 20150421.
 
 This repository contains a Vagrantfile and other content sufficient to set up Ubuntu "Trusty:" (64bit), v. 13.4.0 and a `pyvenv` virtual environment for Python v. 3.4.
 
+Below I will talk about "host" and a "guest" operating systems. The "guest" is the Ubuntu system that you access using Vagrant. The "host" is the system on your computer where Vagrant is being run.
+
 The working Vagrantfile (the configuration file for a Vagrant environment) is in the top-level directory of the repository. To use:
 
  1. Clone this entire repository.
@@ -16,7 +18,7 @@ The working Vagrantfile (the configuration file for a Vagrant environment) is in
 
 ### Launching
 
-After cloning, enter the top-level directory, and do set-up and log-in with these two steps:
+After cloning, enter the top-level directory, and do set-up with these two steps:
 
     vagrant up
 
@@ -41,7 +43,13 @@ After deactivating, you can reactivate it with:
 
 The element `/vagrant` (note the backslash) is the name of your present working directory in the guest OS. It corresponds to the top-level directory on your host operating system. 
 
-I suggest that you edit files using an editor on your host operating system, and use the virtual machine only to run code in the guest operating system.
+I suggest that you edit files using an editor on your host operating system, and use the virtual machine only to run code in the guest operating system. If you want to create your own repository, I suggest copying only the files
+
+ * `Vagrantfile`
+ * `requirements_py34.txt`
+ * directory `scripts`
+ 
+to a new directory and then using `git init` and other git commands to populate the repository. Do this in the host operating system, not the guest system.
 
 ### Logging out and shutting down
 
