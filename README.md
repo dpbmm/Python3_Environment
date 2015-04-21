@@ -8,7 +8,7 @@ Below I will talk about "host" and a "guest" operating systems. The "guest" is t
 
 The working Vagrantfile (the configuration file for a Vagrant environment) is in the top-level directory of the repository. To use:
 
- 1. Clone this entire repository.
+ 1. Clone this entire repository into the directory where you want it to live. I suggest making a special directory `develop` or `vagrant_environments` or something clear of that sort.
  1. Install Vagrant on your host operating system, following instructions beginning [here](http://docs.vagrantup.com/v2/installation/). What follows assumes your "host" operating system is Mac OS 10.9.5; your "guest" operating system is the one being provisioned by Vagrant. I am using VirtualBox as my virtual machine, but other choices are possible.
  1. Initialize, run, and log in to the Vagrant environment as described in the sections below. Note:
 
