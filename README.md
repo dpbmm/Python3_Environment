@@ -4,7 +4,7 @@ This README is dated 20150421.
 
 This repository contains a Vagrantfile and other content sufficient to set up Ubuntu "Trusty" (64bit, v. 13.4.0) and a `pyvenv` virtual environment for Python v. 3.4.
 
-Below I will talk about "host" and a "guest" operating systems. The "guest" is the Ubuntu system that you access using Vagrant. The "host" is the operating system on your computer where Vagrant is being run.
+Below I will talk about "host" and "guest" operating systems. The "guest" is the Ubuntu system that you install and then access using Vagrant. The "host" is the operating system on your computer where Vagrant is being run.
 
 The working Vagrantfile (the configuration file for a Vagrant environment) is in the top-level directory of the repository. To use:
 
