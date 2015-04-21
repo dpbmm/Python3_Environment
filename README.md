@@ -70,4 +70,21 @@ at the command line. Note that this will leave the virtual machine running. To f
 
     sudo shutdown -h 0
 
+### Installing more software
+
+In order to use `pip` to install Python packages you will need to be working within an activated virtual environment. `pip -h` will give you basic commands — `pip install`, `pip uninstall`, and `pip search` cover about 99% of my usage. The "update" option (`-U`) is useful with `pip install`, but remember that there are times when one _doesn't_ want to update to a newer version of a package. To ensure that new installations are recorded in your `requirements_py34.txt` file, use
+
+    pip freeze > requirements_py34.txt
+
+In order to install Ubuntu packages, we normally use
+
+    sudo apt-get update
+    sudo apt-get install &lt;names&gt;
+
+`apt-get` doesn't have a `search` command; instead, we use
+
+    sudo apt-cache search &lt;names&gt;
+
+Do remember that packages installed on your guest OS will not be available to you on the host OS, and vice versa.
+
 [end]
