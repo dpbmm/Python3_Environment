@@ -32,7 +32,11 @@ You will be logged in as the user `vagrant` with administrative privileges and t
 
     (v_env34) vagrant@vagrant-ubuntu-trusty-64:/vagrant$
 
-The element `(v_env34)` at left indicates that you are using the `pyvenv` virtual environment "v_env34". You can leave the environment by typing
+Each piece of this prompt has a meaning.
+
+The element `vagrant@vagrant-ubuntu-trusty-64` means that you are logged in as user `vagrant`, and that your hostname is `vagrant-ubuntu-trusty-64`.
+
+The element `(v_env34)` at left indicates that you are using the `pyvenv` virtual environment "v_env34". You can always leave the environment by typing
 
     deactivate
 
@@ -41,7 +45,7 @@ After deactivating, you can reactivate it with:
     cd /vagrant
     source v_env34/bin/activate
 
-The element `/vagrant` (note the backslash) is the name of your present working directory in the guest OS. It corresponds to the top-level directory on your host operating system. 
+The element `/vagrant` (note the backslash) is the name of your present working directory in the guest OS. It corresponds to the top-level directory on your host operating system. From within the guest you will not be able to access anything on your host system outside of that top-level directory unless you make changes to the Vagrantfile. 
 
 I suggest that you edit files using an editor on your host operating system, and use the virtual machine only to run code in the guest operating system. If you want to create your own repository, I suggest copying only the files
 
@@ -49,7 +53,7 @@ I suggest that you edit files using an editor on your host operating system, and
  * `requirements_py34.txt`
  * directory `scripts`
  
-to a new directory and then using `git init` and other git commands to populate the repository. Do this in the host operating system, not the guest system.
+to a new directory and then using `vagrant up` to provision a new environment and `git init` and other git commands to populate the repository. Do this in the host operating system, not the guest system.
 
 ### Logging out and shutting down
 
@@ -57,7 +61,7 @@ To log out, use
 
     exit
 
-Note that this will leave the virtual machine running. To fully shut down the virtual machine, use
+at the command line. Note that this will leave the virtual machine running. To fully shut down the virtual machine, use
 
     sudo shutdown -h 0
 
